@@ -349,7 +349,7 @@ main video{
 .textoHabilidades{
     grid-row: 1/4 ;
     grid-column: 1/2;
-    background-image: url(../assets/images/textura2.jpg);
+    background-image: url(../assets/images/textura2minus.jpg);
     background-size: 100% 100%;
 }
 
@@ -552,7 +552,7 @@ table, td{
     grid-row: 1/2;
 
     background-color: rgb(137, 137, 137);
-    background-image: url(../assets/images/textura2.jpg);
+    background-image: url(../assets/images/textura2minus.jpg);
     background-size: 100% 100%;
     border-radius: .9375rem;
     overflow: hidden;
