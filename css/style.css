@@ -123,9 +123,7 @@ header {
     width: 6.75rem;
     height: 4rem;
     margin: .625rem; }
-  header #toggle {
-    display: none; }
-  header label {
+  header #toggle, header label {
     display: none; }
 
 .navBar {
@@ -708,7 +706,7 @@ footer {
   header {
     flex-direction: column;
     height: auto; }
-    header #toggle:checked ~ .navBar {
+    header #toggle:checked ~ .navBar, header label:checked ~ .navBar {
       height: auto;
       display: block;
       width: 100%; }
