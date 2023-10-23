@@ -1,0 +1,30 @@
+
+/* Utlities */
+@import "./utilities/mixins";
+
+/* Base */
+@import "./base/reset";
+@import "./base/typo";
+@import "./base/body";
+
+/* Components */
+@import "./components/bootstrap";
+
+/* Layout */
+@import "./layout/header";
+@import "./layout/main_index";
+@import "./layout/main_ingresar";
+@import "./layout/main_personajes";
+@import "./layout/main_eventos";
+@import "./layout/main_compras";
+@import "./layout/footer";
+
+@import "./layout/media990";
+@import "./layout/media850";
+@import "./layout/media755";
+@import "./layout/media670";
+@import "./layout/media580";
+@import "./layout/media576";
+@import "./layout/media540";
+@import "./layout/media420";
+

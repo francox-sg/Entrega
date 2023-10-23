@@ -1,0 +1,48 @@
+/* -------------------Media 540 ------------------*/
+
+@media only screen and (max-width: 540px ){
+
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* -----------------Index-------------- */
+    .indexIndicadores{
+        flex-direction: column;
+        align-items: center;
+        button{
+            width: 18.75rem;
+        }
+    }
+
+    .formatoCarta{
+        h1{
+            font-size: 1.6rem;
+        }
+        h2{
+            font-size: 1.6rem;
+        }
+        h3{
+            font-size: 1.6rem;
+        }
+    } 
+    
+    .sectionImg{
+        width: 70%;
+        img{
+            width: 100%;
+            margin: 10px;
+        }
+    }
+
+    /* Ingresar*/
+    .ingresarSection{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    #creaUsuario{
+        flex-direction: column;
+    }
+}

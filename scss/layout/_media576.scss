@@ -1,0 +1,11 @@
+/* -------------------Media 576 (Boots) ------------------*/
+
+@media only screen and (max-width: 576px ){
+
+    .sectionIndexBoots{
+        flex-direction: column-reverse;
+    }
+    #indexSectionEventosBoots{
+        flex-direction: column;
+    }
+}

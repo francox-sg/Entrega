@@ -1,0 +1,33 @@
+/* -------------------Bootstrap ------------------*/
+.bodyBoots{
+    background-color: dimgrey;
+    background-image: url(../assets/images/taylor-cowling-Xzh5vzcmmHM-unsplash.jpg);
+    background-size: cover;
+} 
+
+.navBarCss{
+    background-color: rgba(0, 0, 0, 0.534);
+    /* position: fixed; */
+    top: 0px;
+    left: 0px;
+    /* z-index: 6; */
+    margin: 0px;
+}
+
+.navbar-nav{
+    --bs-nav-link-padding-y: 0px;
+}
+
+.formatoCartaBoots{
+    background-image: url(../assets/images/textura2.JPG);
+    background-size: 100% 100%;
+    height: 60vh;
+}
+
+.descargaBoots{
+    background-image: url(../assets/images/textura1.jpg);
+}
+
+.footerBoots{
+    @extend .descargaBoots;
+}

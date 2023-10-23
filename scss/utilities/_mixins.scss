@@ -1,0 +1,9 @@
+/* Mixing Botones */
+
+@mixin botonesFormato{
+    background-color: rgb(16, 10, 43);  
+    color: rgb(171, 171, 171);  
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: "Roboto";
+}

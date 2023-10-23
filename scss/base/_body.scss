@@ -1,0 +1,62 @@
+body{
+    background-color: dimgrey;
+    background-image: url(../assets/images/taylor-cowling-Xzh5vzcmmHM-unsplash.jpg);
+    background-size: cover;
+} 
+
+/* Titulares */
+
+.titular{
+    background-color: darkslategray;
+    background-image: url(../assets/images/textura1.jpg);
+    color: rgb(183, 131, 0);
+    text-align: center;
+    margin: 10px;
+}
+
+/* Indicadores y Botones */
+
+.indexIndicadores{
+    margin: 1.875rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    button{
+        @include botonesFormato;
+        &:hover{
+            filter: brightness(1.5);
+        }
+        span{
+            color: green;
+        }
+    }
+}
+
+.personajesGoTo{
+    @extend .indexIndicadores;
+    a{
+        button{
+            @include botonesFormato;
+            &:hover{
+                filter: brightness(1.5);
+            }
+        }
+    }
+}
+
+
+.descarga button{
+    @include botonesFormato;
+    &:hover{
+        filter: brightness(1.5);
+    }
+} 
+
+
+.selecHabilidades button{
+    &:hover{
+        filter: brightness(1.5);
+    }
+    @include botonesFormato;
+}
+    
