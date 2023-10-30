@@ -51,12 +51,12 @@
         width: 100%;
         height: 100%;
         border-radius: 15px;
-        border-color: rgb(16, 2, 86);
+        border-color: map-get($colores , violeta );
         legend{
-            font-family: 'Lilita';
+            font-family: $fuenteRedondeada;
             font-size: 1.875rem;
             margin-bottom: .625rem;
-            color: rgb(16, 2, 86);
+            color: map-get($colores , violeta );
             text-align: center;
             border-radius: 15px;
         }
@@ -72,11 +72,11 @@
                 text-align: center;
                 font-weight: bold;
                 font-size: 1.5625rem;
-                color: rgb(16, 2, 86);
+                color: map-get($colores , violeta );
             }
             input{
                 width: 80%;
-                color: rgb(183, 131, 0);
+                color: map-get($colores , naranja );
                 align-self: center;
                 margin-bottom: .625rem;
                 background-color: rgb(33, 33, 33);
@@ -93,13 +93,13 @@
                 text-align: center;
                 font-weight: bold;
                 font-size: 1.25rem;
-                color: rgb(16, 2, 86);
+                color: map-get($colores , violeta );
             }
             .formButton{
-                color: rgb(183, 131, 0);
-                background-color: rgb(16, 2, 86);
+                color: map-get($colores , naranja );
+                background-color: map-get($colores , violeta );
                 border-radius: 15px;
-                font-family: 'lilita';
+                font-family: $fuenteRedondeada;
                 letter-spacing: .1875rem;
                 margin-top: .625rem;
             }

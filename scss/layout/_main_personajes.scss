@@ -1,5 +1,17 @@
 /* -------------------Personajes ------------------*/
 
+.personajesGoTo{
+    @extend .indexIndicadores;
+    a{
+        button{
+            @include botonesFormato(rgb(16, 10, 43),rgb(171, 171, 171),5px 10px,5px,"Roboto");
+            &:hover{
+                filter: brightness(1.5);
+            }
+        }
+    }
+}
+
 .selPersonajesContainer{
     width: 100%;
     display: grid;
@@ -115,6 +127,12 @@
     grid-column: 1/2;
     justify-self: center;
     align-self: center;
+    button{
+        &:hover{
+            filter: brightness(1.5);
+        }
+        @include botonesFormato(rgb(16, 10, 43),rgb(171, 171, 171),5px 10px,5px,"Roboto");
+    }
 }
 
 .habilidadesImg{

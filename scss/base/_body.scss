@@ -8,19 +8,19 @@ body{
     flex-direction: column;
 } 
 
-/* Titulares */
+/* Titulares Generales */
 
 .titular{
     background-color: darkslategray;
     background-image: url(../assets/images/textura1.jpg);
-    color: rgb(183, 131, 0);
+    color: map-get($colores , naranja);
     text-align: center;
     margin: 10px;
 }
 
 /* Indicadores y Botones */
 
-.indexIndicadores{
+/* .indexIndicadores{
     margin: 1.875rem;
     display: flex;
     justify-content: center;
@@ -34,9 +34,9 @@ body{
             color: green;
         }
     }
-}
+} */
 
-.personajesGoTo{
+/* .personajesGoTo{
     @extend .indexIndicadores;
     a{
         button{
@@ -47,20 +47,20 @@ body{
         }
     }
 }
-
-
+ */
+/* 
 .descarga button{
     @include botonesFormato;
     &:hover{
         filter: brightness(1.5);
     }
 } 
-
-
+ */
+/* 
 .selecHabilidades button{
     &:hover{
         filter: brightness(1.5);
     }
     @include botonesFormato;
 }
-    
+     */

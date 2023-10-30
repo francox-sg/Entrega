@@ -36,7 +36,7 @@ body {
   display: flex;
   flex-direction: column; }
 
-/* Titulares */
+/* Titulares Generales */
 .titular {
   background-color: darkslategray;
   background-image: url(../assets/images/textura1.jpg);
@@ -45,49 +45,49 @@ body {
   margin: 10px; }
 
 /* Indicadores y Botones */
-.indexIndicadores, .personajesGoTo {
-  margin: 1.875rem;
-  display: flex;
-  justify-content: center;
-  gap: 1.25rem; }
-  .indexIndicadores button, .personajesGoTo button {
-    background-color: #100a2b;
-    color: #ababab;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-family: "Roboto"; }
-    .indexIndicadores button:hover, .personajesGoTo button:hover {
-      filter: brightness(1.5); }
-    .indexIndicadores button span, .personajesGoTo button span {
-      color: green; }
-
-.personajesGoTo a button {
-  background-color: #100a2b;
-  color: #ababab;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-family: "Roboto"; }
-  .personajesGoTo a button:hover {
-    filter: brightness(1.5); }
-
-.descarga button {
-  background-color: #100a2b;
-  color: #ababab;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-family: "Roboto"; }
-  .descarga button:hover {
-    filter: brightness(1.5); }
-
-.selecHabilidades button {
-  background-color: #100a2b;
-  color: #ababab;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-family: "Roboto"; }
-  .selecHabilidades button:hover {
-    filter: brightness(1.5); }
-
+/* .indexIndicadores{
+    margin: 1.875rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    button{
+        @include botonesFormato;
+        &:hover{
+            filter: brightness(1.5);
+        }
+        span{
+            color: green;
+        }
+    }
+} */
+/* .personajesGoTo{
+    @extend .indexIndicadores;
+    a{
+        button{
+            @include botonesFormato;
+            &:hover{
+                filter: brightness(1.5);
+            }
+        }
+    }
+}
+ */
+/* 
+.descarga button{
+    @include botonesFormato;
+    &:hover{
+        filter: brightness(1.5);
+    }
+} 
+ */
+/* 
+.selecHabilidades button{
+    &:hover{
+        filter: brightness(1.5);
+    }
+    @include botonesFormato;
+}
+     */
 /* Components */
 /* -------------------Bootstrap ------------------*/
 .bodyBoots {
@@ -159,6 +159,22 @@ header {
 main video {
   width: 100%; }
 
+.indexIndicadores, .personajesGoTo {
+  margin: 1.875rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem; }
+  .indexIndicadores button, .personajesGoTo button {
+    background-color: #100a2b;
+    color: #ababab;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: "Roboto"; }
+    .indexIndicadores button:hover, .personajesGoTo button:hover {
+      filter: brightness(1.5); }
+    .indexIndicadores button span, .personajesGoTo button span {
+      color: green; }
+
 .indexSection {
   margin: 1.875rem;
   height: 60vh;
@@ -215,7 +231,14 @@ main video {
   justify-content: center; }
   .descarga button {
     font-size: 30px;
-    padding: 15px 20px; }
+    padding: 15px 20px;
+    background-color: #100a2b;
+    color: #ababab;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: "Roboto"; }
+    .descarga button:hover {
+      filter: brightness(1.5); }
 
 /* -------------------Ingresar------------------*/
 .titularSuperior {
@@ -263,7 +286,7 @@ main video {
     border-radius: 15px;
     border-color: #100256; }
     .form fieldset legend {
-      font-family: 'Lilita';
+      font-family: "lilita";
       font-size: 1.875rem;
       margin-bottom: .625rem;
       color: #100256;
@@ -301,11 +324,20 @@ main video {
         color: #b78300;
         background-color: #100256;
         border-radius: 15px;
-        font-family: 'lilita';
+        font-family: "lilita";
         letter-spacing: .1875rem;
         margin-top: .625rem; }
 
 /* -------------------Personajes ------------------*/
+.personajesGoTo a button {
+  background-color: #100a2b;
+  color: #ababab;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: "Roboto"; }
+  .personajesGoTo a button:hover {
+    filter: brightness(1.5); }
+
 .selPersonajesContainer {
   width: 100%;
   display: grid;
@@ -399,6 +431,14 @@ main video {
   grid-column: 1/2;
   justify-self: center;
   align-self: center; }
+  .selecHabilidades button {
+    background-color: #100a2b;
+    color: #ababab;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: "Roboto"; }
+    .selecHabilidades button:hover {
+      filter: brightness(1.5); }
 
 .habilidadesImg {
   width: 100%;
@@ -559,7 +599,7 @@ td {
   gap: .9375rem; }
   .transaccion button {
     height: 2.5rem;
-    font-family: "Lilita";
+    font-family: "lilita";
     font-size: 1.5625rem;
     background-color: rgba(16, 210, 42, 0.501);
     color: black;
@@ -568,7 +608,7 @@ td {
     .transaccion button:hover {
       filter: brightness(1.5); }
   .transaccion p {
-    font-family: "Lilita";
+    font-family: "lilita";
     margin-top: .625rem;
     font-size: 1.5625rem; }
 

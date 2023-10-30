@@ -4,6 +4,22 @@ main video{
     width: 100%;
 }
 
+.indexIndicadores{
+    margin: 1.875rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    button{
+        @include botonesFormato(rgb(16, 10, 43),rgb(171, 171, 171),5px 10px,5px,"Roboto");
+        &:hover{
+            filter: brightness(1.5);
+        }
+        span{
+            color: green;
+        }
+    }
+}
+
 .indexSection{
     margin: 1.875rem;
     height: 60vh;
@@ -70,5 +86,9 @@ main video{
     button{
         font-size: 30px;
         padding: 15px 20px;
+        @include botonesFormato(rgb(16, 10, 43),rgb(171, 171, 171),5px 10px,5px,"Roboto");
+        &:hover{
+            filter: brightness(1.5);
+        }
     }
 }
