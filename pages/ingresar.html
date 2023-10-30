@@ -32,10 +32,10 @@
         <!-- Ingresar con Usuario -->
         <h1 class="titular">Ingresar</h1>
         <section class="ingresarSection">
-            <div class="sectionImg">
+            <div class="sectionIngresarImg">
                 <img  src="../assets/images/lado_dw.png" alt="Dark Wizard Alado">
             </div>
-            <div>
+            <div class="ingresa">
                 <form  class="form" action="">
                     <fieldset>
                         <legend> Ingresa con tu cuenta</legend>
@@ -44,16 +44,19 @@
                             <input type="text" id="usuario" placeholder="Usuario123" required>
                             <label for="pass">Contraseña</label>
                             <input type="password" id="pass" placeholder="Contraseña" required>
-                            <input type="submit" value="Ingresar">
+                            <input class="formButton" type="submit" value="Ingresar">
                         </div>
                     </fieldset>
                 </form>
+            </div>
+            <div id="ingresarDesaparece" class="sectionIngresarImg">
+                <img  src="../assets/images/lado_dw2.png" alt="Dark Wizard Alado">
             </div>
         </section>
         <!-- Nuevo Usuario -->
         <h2 class="titular">Crea una Cuenta</h2>
         <section id="creaUsuario" class="ingresarSection">
-            <div>
+            <div class="ingresaNuevo">
                 <form  class="form" action="">
                     <fieldset >
                         <legend>Crea tu Usuario</legend>
@@ -68,21 +71,36 @@
                             <input type="email" id="nuevo_email" placeholder="Usuario123@MUCODER.com" required>
                             <p>Acepto los Terminos y Condiciones</p>
                             <input type="checkbox" name="TermCond" id="AceptoTC">
-                            <input type="submit" value="Registrarse">
+                            <input class="formButton" type="submit" value="Registrarse">
                         </div>
                     </fieldset>
                 </form>
             </div>
-            <div class="sectionImg">
+            <div id="imgIngresoNuevo"  class="sectionImg">
                 <img src="../assets/images/dw.png" alt="Dark Wizard con baculo">
             </div>
         </section>
     </main>
 
     <footer>
-        <img src="../assets/images/instagram.png" alt="Instagram">
-        <img src="../assets/images/facebook.png" alt="Facebook">
-        <img src="../assets/images/email.png" alt="Correo">         
+        <div>
+            <div class="listFooter">
+                <ul>
+                    <li><a href="">Foro</a></li>
+                    <li><a href="">Suscripciones</a></li>
+                    <li><a href="">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+            <div class="imgFooter">
+                <img src="../assets/images/iXwplf3.png" alt="Logotipo MU-CODER" >
+            </div>
+            <div class="contactoFooter">
+                <img src="../assets/images/instagram.png" alt="Instagram">
+                <img src="../assets/images/facebook.png" alt="Facebook">
+                <img src="../assets/images/email.png" alt="Correo">
+            </div>
+        </div>
+        <p> MU-Coder ® Copyright </p>        
     </footer>
 
 </body>

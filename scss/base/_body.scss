@@ -2,6 +2,10 @@ body{
     background-color: dimgrey;
     background-image: url(../assets/images/taylor-cowling-Xzh5vzcmmHM-unsplash.jpg);
     background-size: cover;
+    cursor: url(../assets/images/puntero.png) ,  auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 } 
 
 /* Titulares */

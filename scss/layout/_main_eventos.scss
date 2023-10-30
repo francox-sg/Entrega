@@ -19,13 +19,15 @@
 .eventoImg{
     border-radius: 50%;
     overflow: hidden;
-    width: 500px;
+    width: 31.25rem;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: .9375rem;
+    
     img{
-        width: 650px;
+        width: 100%;
         height: fit-content;
     }
 }

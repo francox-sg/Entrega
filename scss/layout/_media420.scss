@@ -35,6 +35,10 @@
             right: 30px;
         }
     }
+    /* Index */
+    .indexSection{
+        margin: 1rem;
+    }
 
     /* Eventos */
     #proximosEventos div{
@@ -100,6 +104,7 @@
     #Habilidades{
         grid-template-columns: repeat(3,1fr)  ;
         grid-template-rows: repeat(8,1fr);
+        margin: 1rem;
     }
     
     .textoHabilidades{
@@ -119,13 +124,44 @@
         grid-column: 2/4;
         grid-row: 1/5 ;
     }
-
+    #Estadisticas{
+        margin: 1rem;
+    }
     #estadisticasTabla{
         padding: 0%;
     }
 
     #histograma{
         padding: 0%;
+    }
+    /* Compras */
+
+    .gridCompras{
+        height: 50vh;
+        .seleccionItem{
+            .tipoPersonaje{
+                h2{
+                    font-size: 1.25rem;
+                }
+            }
+        }
+        .transaccion{
+            flex-direction: column;
+            button{
+                font-size: 1.25rem;
+            }
+            p{
+                font-size: 1.25rem;
+            }
+        } 
+    }
+    .personajeGrandeCompras{
+        padding-top: 0px; 
+        img {
+            margin-top: 10px;
+            height: 80%;
+            width: 120%;
+        }
     }
 
 } 

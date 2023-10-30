@@ -16,7 +16,10 @@
         }
     }
 
+    
+
     .formatoCarta{
+        width: 100%;
         h1{
             font-size: 1.6rem;
         }
@@ -40,9 +43,31 @@
     .ingresarSection{
         flex-direction: column-reverse;
         align-items: center;
+        .ingresa{
+            width: 90%;
+        }
+        .ingresaNuevo{
+            width: 90%;
+        }
+        .sectionIngresarImg{
+            width: 70%;
+        }
     }
     
     #creaUsuario{
         flex-direction: column;
+    }
+
+    #imgIngresoNuevo{
+        width: 90%;
+    }
+    /* Compras */
+
+    .personajeGrandeCompras{
+        padding-top: 3.125rem ;
+        img{
+            width: 100%;
+            height: fit-content;
+        }
     }
 }

@@ -5,7 +5,7 @@
     /* Compras */
 
     .gridCompras{
-        height: 100vh;
+        height: 70vh;
         grid-template-columns: repeat(4,1fr) ;
         grid-template-rows: repeat(6, 1fr);
     }
@@ -40,11 +40,12 @@
         grid-column: 3/5 ;
         grid-row: 1/5;
         overflow-y: scroll ;
+        margin-top: 1.875rem;
     }
 
     .transaccion{
         height: 2.5rem;
-        grid-column: 1/4 ;
+        grid-column: 1/5 ;
         grid-row: 6/7;
     } 
 

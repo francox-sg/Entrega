@@ -30,7 +30,11 @@
 body {
   background-color: dimgrey;
   background-image: url(../assets/images/taylor-cowling-Xzh5vzcmmHM-unsplash.jpg);
-  background-size: cover; }
+  background-size: cover;
+  cursor: url(../assets/images/puntero.png), auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
 
 /* Titulares */
 .titular {
@@ -167,7 +171,10 @@ main video {
   justify-content: space-between; }
 
 .sectionImg {
-  width: 410px; }
+  width: 410px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .sectionImg img {
     width: 410px;
     height: fit-content; }
@@ -221,32 +228,82 @@ main video {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.311);
   box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.19);
-  border-radius: 15px; }
+  border-radius: 15px;
+  margin: 30px 0px; }
+  .ingresarSection .sectionIngresarImg {
+    width: 30%; }
+    .ingresarSection .sectionIngresarImg img {
+      width: 100%;
+      height: fit-content; }
+  .ingresarSection .ingresa {
+    width: 25rem;
+    height: 15.625rem;
+    display: flex;
+    justify-content: center; }
+    .ingresarSection .ingresa:hover {
+      filter: drop-shadow(0 0 0.75rem #1f02ff); }
+  .ingresarSection .ingresaNuevo {
+    width: 34.375rem;
+    display: flex;
+    justify-content: center; }
+    .ingresarSection .ingresaNuevo:hover {
+      filter: drop-shadow(0 0 0.75rem #1f02ff); }
 
 .form {
-  width: 15rem;
-  height: 21.875rem;
+  width: 100%;
   background-image: url(../assets/images/textura2.JPG);
   background-size: 100% 100%;
   border-radius: .9375rem;
-  padding: .9375rem; }
+  padding: .9375rem;
+  display: flex;
+  justify-content: center; }
   .form fieldset {
-    width: 12.5rem; }
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border-color: #100256; }
     .form fieldset legend {
-      font-size: 1.25rem;
-      font-weight: bold; }
+      font-family: 'Lilita';
+      font-size: 1.875rem;
+      margin-bottom: .625rem;
+      color: #100256;
+      text-align: center;
+      border-radius: 15px; }
     .form fieldset div {
-      width: 12.5rem;
+      width: 100%;
+      height: 100%;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      justify-content: center; }
       .form fieldset div label {
         text-align: center;
         font-weight: bold;
+        font-size: 1.5625rem;
         color: #100256; }
+      .form fieldset div input {
+        width: 80%;
+        color: #b78300;
+        align-self: center;
+        margin-bottom: .625rem;
+        background-color: #212121;
+        text-align: center;
+        font-size: 1.25rem; }
+        .form fieldset div input:focus {
+          outline: none;
+          background-color: #393939;
+          color: white; }
       .form fieldset div p {
         text-align: center;
         font-weight: bold;
+        font-size: 1.25rem;
         color: #100256; }
+      .form fieldset div .formButton {
+        color: #b78300;
+        background-color: #100256;
+        border-radius: 15px;
+        font-family: 'lilita';
+        letter-spacing: .1875rem;
+        margin-top: .625rem; }
 
 /* -------------------Personajes ------------------*/
 .selPersonajesContainer {
@@ -432,13 +489,14 @@ td {
 .eventoImg {
   border-radius: 50%;
   overflow: hidden;
-  width: 500px;
+  width: 31.25rem;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: .9375rem; }
   .eventoImg img {
-    width: 650px;
+    width: 100%;
     height: fit-content; }
 
 /* -------------------Compras ------------------*/
@@ -448,7 +506,9 @@ td {
   grid-template-rows: 1fr;
   margin: 30px 15px;
   box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.19);
-  border-radius: 15px; }
+  border-radius: 15px;
+  background-image: url(../assets/images/textura2.JPG);
+  background-size: 100% 100%; }
 
 .personajeGrandeCompras {
   grid-column: 1/2;
@@ -461,15 +521,14 @@ td {
 .seleccionItem {
   grid-column: 2/4;
   grid-row: 1/2;
-  background-color: #898989;
-  background-image: url(../assets/images/textura2minus.jpg);
-  background-size: 100% 100%;
   border-radius: .9375rem;
   overflow: hidden;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr); }
+  .seleccionItem .tipoPersonaje h2 {
+    font-size: 1.875rem; }
 
 .personajeCompras, .items img {
   width: 50px;
@@ -501,6 +560,7 @@ td {
   .transaccion button {
     height: 2.5rem;
     font-family: "Lilita";
+    font-size: 1.5625rem;
     background-color: rgba(16, 210, 42, 0.501);
     color: black;
     padding: 5px 10px;
@@ -509,16 +569,54 @@ td {
       filter: brightness(1.5); }
   .transaccion p {
     font-family: "Lilita";
-    margin-top: .625rem; }
+    margin-top: .625rem;
+    font-size: 1.5625rem; }
 
 /* -------------------Footer ------------------*/
 footer {
+  width: 100%;
   padding: 30px;
   background-color: #100a2b;
   background-image: url(../assets/images/textura1.jpg);
   display: flex;
-  justify-content: end;
-  gap: .9375rem; }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  footer div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    footer div .listFooter {
+      display: flex;
+      align-items: center; }
+      footer div .listFooter ul {
+        list-style: none;
+        margin-left: 1.875rem; }
+        footer div .listFooter ul li a {
+          text-decoration: none;
+          color: #c4c3c3;
+          font-size: 1.25rem; }
+    footer div .imgFooter {
+      display: flex;
+      justify-content: center;
+      background-image: url(../assets/images/backlogotipo.png);
+      background-size: 9rem 9rem;
+      background-repeat: no-repeat;
+      background-position: center; }
+      footer div .imgFooter img {
+        width: 6.75rem;
+        height: 4rem;
+        margin: .625rem; }
+    footer div .contactoFooter {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: .9375rem; }
+  footer p {
+    margin-top: .9375rem;
+    color: #c4c3c3;
+    font-size: 1rem; }
 
 /* -------------------Media 990 (Boots)------------------*/
 @media only screen and (max-width: 990px) {
@@ -527,7 +625,30 @@ footer {
     .liBoots a {
       width: 100%; }
     .liBoots img {
-      display: none; } }
+      display: none; }
+  /* Ingresar */
+  #ingresarDesaparece {
+    display: none; }
+  .form fieldset legend {
+    font-size: 1.5625rem; }
+  .form fieldset div label {
+    font-size: 1.25rem; }
+  .form fieldset div input {
+    font-size: 1rem; }
+  .form fieldset div p {
+    font-size: 1.25rem; }
+  .form fieldset div .formButton {
+    font-size: 1rem; }
+  .ingresarSection .ingresaNuevo {
+    width: auto; }
+  #imgIngresoNuevo {
+    width: 40%; }
+    #imgIngresoNuevo img {
+      width: 100%;
+      height: fit-content; }
+  /* Compras */
+  .gridCompras .tipoPersonaje h2 {
+    font-size: 1.5625rem; } }
 
 /* -------------------Media 850 ------------------*/
 @media only screen and (max-width: 850px) {
@@ -612,7 +733,7 @@ footer {
 @media only screen and (max-width: 755px) {
   /* Compras */
   .gridCompras {
-    height: 100vh;
+    height: 70vh;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .personajeGrandeCompras {
@@ -637,23 +758,49 @@ footer {
   .items {
     grid-column: 3/5;
     grid-row: 1/5;
-    overflow-y: scroll; }
+    overflow-y: scroll;
+    margin-top: 1.875rem; }
   .transaccion {
     height: 2.5rem;
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: 6/7; } }
 
 /* -------------------Media 670 ------------------*/
 @media only screen and (max-width: 670px) {
   /* Ingresar */
-  .ingresarSection div img {
-    width: 100%; } }
+  .ingresarSection .ingresa {
+    width: 15rem; }
+  .ingresarSection .ingresaNuevo {
+    width: 15rem; }
+  #imgIngresoNuevo {
+    width: 50%; }
+  /* footer */
+  footer div {
+    flex-direction: column;
+    align-items: center; }
+    footer div .listFooter {
+      flex-direction: row;
+      justify-content: center; }
+      footer div .listFooter ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px; }
+    footer div .imgFooter {
+      flex-direction: row;
+      justify-content: center;
+      margin: 1.25rem; }
+    footer div .contactoFooter {
+      flex-direction: row;
+      justify-content: center; } }
 
 /* -------------------Media 580 ------------------*/
 @media only screen and (max-width: 580px) {
   /* Eventos */
   .eventoImg {
-    width: 100%; } }
+    width: 100%; }
+    .eventoImg img {
+      width: 100%; } }
 
 /* -------------------Media 576 (Boots) ------------------*/
 @media only screen and (max-width: 576px) {
@@ -673,12 +820,14 @@ footer {
     align-items: center; }
     .indexIndicadores button, .personajesGoTo button {
       width: 18.75rem; }
-  .formatoCarta h1 {
-    font-size: 1.6rem; }
-  .formatoCarta h2 {
-    font-size: 1.6rem; }
-  .formatoCarta h3 {
-    font-size: 1.6rem; }
+  .formatoCarta {
+    width: 100%; }
+    .formatoCarta h1 {
+      font-size: 1.6rem; }
+    .formatoCarta h2 {
+      font-size: 1.6rem; }
+    .formatoCarta h3 {
+      font-size: 1.6rem; }
   .sectionImg {
     width: 70%; }
     .sectionImg img {
@@ -688,8 +837,22 @@ footer {
   .ingresarSection {
     flex-direction: column-reverse;
     align-items: center; }
+    .ingresarSection .ingresa {
+      width: 90%; }
+    .ingresarSection .ingresaNuevo {
+      width: 90%; }
+    .ingresarSection .sectionIngresarImg {
+      width: 70%; }
   #creaUsuario {
-    flex-direction: column; } }
+    flex-direction: column; }
+  #imgIngresoNuevo {
+    width: 90%; }
+  /* Compras */
+  .personajeGrandeCompras {
+    padding-top: 3.125rem; }
+    .personajeGrandeCompras img {
+      width: 100%;
+      height: fit-content; } }
 
 /* -------------------Media 420 ------------------*/
 @media only screen and (max-width: 420px) {
@@ -715,6 +878,9 @@ footer {
       position: fixed;
       top: 30px;
       right: 30px; }
+  /* Index */
+  .indexSection {
+    margin: 1rem; }
   /* Eventos */
   #proximosEventos div {
     width: 90%; }
@@ -757,7 +923,8 @@ footer {
     width: 70%; }
   #Habilidades {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(8, 1fr); }
+    grid-template-rows: repeat(8, 1fr);
+    margin: 1rem; }
   .textoHabilidades {
     grid-row: 5/9;
     grid-column: 1/4; }
@@ -770,7 +937,26 @@ footer {
   .habilidadesImg {
     grid-column: 2/4;
     grid-row: 1/5; }
+  #Estadisticas {
+    margin: 1rem; }
   #estadisticasTabla {
     padding: 0%; }
   #histograma {
-    padding: 0%; } }
+    padding: 0%; }
+  /* Compras */
+  .gridCompras {
+    height: 50vh; }
+    .gridCompras .seleccionItem .tipoPersonaje h2 {
+      font-size: 1.25rem; }
+    .gridCompras .transaccion {
+      flex-direction: column; }
+      .gridCompras .transaccion button {
+        font-size: 1.25rem; }
+      .gridCompras .transaccion p {
+        font-size: 1.25rem; }
+  .personajeGrandeCompras {
+    padding-top: 0px; }
+    .personajeGrandeCompras img {
+      margin-top: 10px;
+      height: 80%;
+      width: 120%; } }

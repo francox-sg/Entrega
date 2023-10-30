@@ -18,6 +18,9 @@ main video{
 
 .sectionImg{
     width: 410px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img{
         width: 410px;
         height: fit-content;
