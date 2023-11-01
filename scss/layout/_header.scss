@@ -26,17 +26,24 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between ;
+    
     ul{
         list-style: none;
         display: flex;
         gap: .9375rem;
         li{
+            transition: transform 250ms;
+            &:hover{
+                transform: scale(1.1,1.1);
+                
+            }
             a{
                 text-decoration: none;
                 font-family: "Roboto";
                 color:aliceblue;
+                transition: color 1s;
                 &:hover{
-                    color:blueviolet;
+                    color:rgb(88, 42, 239);
                 }
             }
         }
@@ -54,3 +61,4 @@ header{
     position: fixed;
     z-index: 5;
 }
+

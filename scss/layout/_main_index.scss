@@ -1,8 +1,24 @@
 /* -------------------Index ------------------*/
 
-main video{
-    width: 100%;
+.video{
+    position: relative;
+    video{
+        width: 100%;
+    }
+    p{
+        color: white;
+        font-family: 'roboto';
+        font-size: 1.875rem;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.433);
+        top: 45%;
+        left: 45%;
+        border-radius: 15px;
+            -webkit-animation: shake-horizontal 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+	        animation: shake-horizontal 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+    }
 }
+
 
 .indexIndicadores{
     margin: 1.875rem;
@@ -87,6 +103,7 @@ main video{
         font-size: 30px;
         padding: 15px 20px;
         @include botonesFormato(rgb(16, 10, 43),rgb(171, 171, 171),5px 10px,5px,"Roboto");
+        
         &:hover{
             filter: brightness(1.5);
         }
