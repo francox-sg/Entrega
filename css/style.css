@@ -295,7 +295,7 @@ header {
     font-size: 1.0rem;
     font-weight: bold; }
     .formatoCarta p span {
-      font-size: 2rem; }
+      font-size: 1.3rem; }
 
 .descarga {
   margin: 20px;
@@ -497,7 +497,10 @@ header {
     margin-left: 1.875rem;
     margin-right: 1.875rem;
     font-size: 1.0rem;
-    font-weight: bold; }
+    font-weight: bold;
+    text-align: center; }
+    .textoHabilidades p span {
+      font-size: 1.3rem; }
 
 .selecHabilidades {
   margin-bottom: 1.8rem;
