@@ -153,6 +153,7 @@
         }
         .transaccion{
             flex-direction: column;
+            gap: 0rem;
             a{
                 button{
                     font-size: 1.25rem;
@@ -168,7 +169,6 @@
         img {
             margin-top: 10px;
             height: 80%;
-            width: 120%;
         }
     }
 

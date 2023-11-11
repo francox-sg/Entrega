@@ -912,7 +912,7 @@ footer {
     .personajeGrandeCompras img {
       width: fit-content;
       height: 80%;
-      margin-top: 20%; }
+      margin-top: 10%; }
   .seleccionItem {
     grid-column: 1/5;
     grid-row: 1/7;
@@ -1023,9 +1023,6 @@ footer {
   /* Compras */
   .personajeGrandeCompras {
     padding-top: 3.125rem; }
-    .personajeGrandeCompras img {
-      width: 100%;
-      height: fit-content; }
   /* Personajes */
   #Habilidades {
     height: 60vh; }
@@ -1140,7 +1137,8 @@ footer {
     .gridCompras .seleccionItem .tipoPersonaje h2 {
       font-size: 1.25rem; }
     .gridCompras .transaccion {
-      flex-direction: column; }
+      flex-direction: column;
+      gap: 0rem; }
       .gridCompras .transaccion a button {
         font-size: 1.25rem; }
       .gridCompras .transaccion p {
@@ -1149,5 +1147,4 @@ footer {
     padding-top: 0px; }
     .personajeGrandeCompras img {
       margin-top: 10px;
-      height: 80%;
-      width: 120%; } }
+      height: 80%; } }
