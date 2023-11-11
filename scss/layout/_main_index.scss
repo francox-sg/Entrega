@@ -34,6 +34,14 @@
             color: green;
         }
     }
+    a{
+        button{
+            @include botonesFormato(rgb(16, 10, 43),rgb(171, 171, 171),5px 10px,5px,"Roboto");
+            &:hover{
+                filter: brightness(1.5);
+            }
+        }
+    }
 }
 
 .indexSection{
@@ -55,7 +63,7 @@
     align-items: center;
     img{
         width: 410px;
-        height: fit-content;
+        height: 100%;
     }
 }
 
@@ -99,12 +107,14 @@
     padding: 10px 0px;
     display: flex;
     justify-content: center;
-    button{
-        font-size: 30px;
-        padding: 15px 20px;
-        @include botonesFormato(rgb(16, 10, 43),rgb(171, 171, 171),5px 10px,5px,"Roboto");
-        &:hover{
-            filter: brightness(1.5);
+    a{
+        button{
+            font-size: 30px;
+            padding: 15px 20px;
+            @include botonesFormato(rgb(16, 10, 43),rgb(171, 171, 171),5px 10px,5px,"Roboto");
+            &:hover{
+                filter: brightness(1.5);
+            }
         }
     }
 }

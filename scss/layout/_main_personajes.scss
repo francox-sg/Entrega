@@ -16,7 +16,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 15.5% 20.5% 26.5% 20.5% 13.5%;
-    grid-template-rows: 50px 300px;
+    grid-template-rows: 50px 400px;
     h2{
         grid-column: 1/6;
         grid-row: 1/2;
@@ -30,9 +30,11 @@
     &:hover{
         filter: drop-shadow(0 0 0.75rem crimson);
     }
-    img{
-        width: 100%;
-        height: fit-content;
+    a{
+        img{
+            width: 100%;
+            height: fit-content;
+        }
     }
 }
 
@@ -44,9 +46,11 @@
     &:hover{
         filter: drop-shadow(0 0 0.75rem crimson);
     }
-    img{
-        width: 100%;
-        height: fit-content;
+    a{
+        img{
+            width: 100%;
+            height: fit-content;
+        }
     }
 }
 
@@ -57,9 +61,11 @@
     &:hover{
         filter: drop-shadow(0 0 0.75rem crimson);
     }
-    img{
-        width: 100%;
-        height: fit-content;
+    a{
+        img{
+            width: 100%;
+            height: fit-content;
+        }
     }
 }
 
@@ -70,9 +76,11 @@
     &:hover{
         filter: drop-shadow(0 0 0.75rem crimson);
     }
-    img{
-        width: 100%;
-        height: fit-content;
+    a{
+        img{
+            width: 100%;
+            height: fit-content;
+        }
     }
 }
 
@@ -83,15 +91,16 @@
     &:hover{
         filter: drop-shadow(0 0 0.75rem crimson);
     }
-    img{
-        width: 100%;
-        height: fit-content;
+    a{
+        img{
+            width: 100%;
+            height: fit-content;
+        }
     }
 }
 
 /* Habilidades */
 #Habilidades{
-    height: 60vh;
     display: grid;
     grid-template-columns: 60% 40%  ;
     grid-template-rows: repeat(4,1fr);
@@ -131,11 +140,13 @@
     grid-column: 1/2;
     justify-self: center;
     align-self: center;
-    button{
-        &:hover{
-            filter: brightness(1.5);
+    a{
+        button{
+            &:hover{
+                filter: brightness(1.5);
+            }
+            @include botonesFormato(rgb(16, 10, 43),rgb(171, 171, 171),5px 10px,5px,"Roboto");
         }
-        @include botonesFormato(rgb(16, 10, 43),rgb(171, 171, 171),5px 10px,5px,"Roboto");
     }
 }
 

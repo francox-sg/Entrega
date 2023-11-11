@@ -75,4 +75,28 @@
             height: fit-content;
         }
     }
+    /* Personajes */
+    #Habilidades{
+        height: 60vh;
+    }
+    /* Pagina 404 */
+    .body404{
+        main{
+            section{
+                div:nth-child(1){
+                    padding-left: 0%;
+                    margin: 0px;
+                }
+                div:nth-child(2){
+                    display: flex;
+                    justify-content: center;
+                    margin: 30px;
+                    img{
+                        width: 15.625rem;
+                        height: 15.625rem;
+                    }
+                }
+            }
+        }
+    }
 }

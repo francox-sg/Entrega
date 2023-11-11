@@ -153,8 +153,10 @@
         }
         .transaccion{
             flex-direction: column;
-            button{
-                font-size: 1.25rem;
+            a{
+                button{
+                    font-size: 1.25rem;
+                }
             }
             p{
                 font-size: 1.25rem;

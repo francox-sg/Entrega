@@ -66,5 +66,20 @@
             }
         }
     }
+    /* Personajes */
 
+    .selPersonajesContainer{
+        grid-template-rows: 50px 300px;
+    }
+
+    /* Pagina 404 */
+    .body404{
+        main{
+            section{
+                div:nth-child(1){
+                    padding-left: 25%;
+                }
+            }
+        }
+    }
 }

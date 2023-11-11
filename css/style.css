@@ -248,6 +248,14 @@ header {
       filter: brightness(1.5); }
     .indexIndicadores button span, .personajesGoTo button span {
       color: green; }
+  .indexIndicadores a button, .personajesGoTo a button {
+    background-color: #100a2b;
+    color: #ababab;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: "Roboto"; }
+    .indexIndicadores a button:hover, .personajesGoTo a button:hover {
+      filter: brightness(1.5); }
 
 .indexSection {
   margin: 1.875rem;
@@ -267,7 +275,7 @@ header {
   align-items: center; }
   .sectionImg img {
     width: 410px;
-    height: fit-content; }
+    height: 100%; }
 
 .formatoCarta {
   background-image: url(../assets/images/textura2.JPG);
@@ -303,7 +311,7 @@ header {
   padding: 10px 0px;
   display: flex;
   justify-content: center; }
-  .descarga button {
+  .descarga a button {
     font-size: 30px;
     padding: 15px 20px;
     background-color: #100a2b;
@@ -311,7 +319,7 @@ header {
     padding: 5px 10px;
     border-radius: 5px;
     font-family: "Roboto"; }
-    .descarga button:hover {
+    .descarga a button:hover {
       filter: brightness(1.5); }
 
 /* -------------------Ingresar------------------*/
@@ -389,6 +397,10 @@ header {
           outline: none;
           background-color: #393939;
           color: white; }
+      .form fieldset div a {
+        display: flex;
+        justify-content: center;
+        text-decoration: none; }
       .form fieldset div p {
         text-align: center;
         font-weight: bold;
@@ -416,7 +428,7 @@ header {
   width: 100%;
   display: grid;
   grid-template-columns: 15.5% 20.5% 26.5% 20.5% 13.5%;
-  grid-template-rows: 50px 300px; }
+  grid-template-rows: 50px 400px; }
   .selPersonajesContainer h2 {
     grid-column: 1/6;
     grid-row: 1/2; }
@@ -427,7 +439,7 @@ header {
   align-self: center; }
   .personajesSelecElf:hover {
     filter: drop-shadow(0 0 0.75rem crimson); }
-  .personajesSelecElf img {
+  .personajesSelecElf a img {
     width: 100%;
     height: fit-content; }
 
@@ -437,7 +449,7 @@ header {
   align-self: center; }
   .personajesSelecDw:hover {
     filter: drop-shadow(0 0 0.75rem crimson); }
-  .personajesSelecDw img {
+  .personajesSelecDw a img {
     width: 100%;
     height: fit-content; }
 
@@ -447,7 +459,7 @@ header {
   align-self: center; }
   .personajesSelecDk:hover {
     filter: drop-shadow(0 0 0.75rem crimson); }
-  .personajesSelecDk img {
+  .personajesSelecDk a img {
     width: 100%;
     height: fit-content; }
 
@@ -457,7 +469,7 @@ header {
   align-self: center; }
   .personajesSelecMg:hover {
     filter: drop-shadow(0 0 0.75rem crimson); }
-  .personajesSelecMg img {
+  .personajesSelecMg a img {
     width: 100%;
     height: fit-content; }
 
@@ -467,13 +479,12 @@ header {
   align-self: center; }
   .personajesSelecSum:hover {
     filter: drop-shadow(0 0 0.75rem crimson); }
-  .personajesSelecSum img {
+  .personajesSelecSum a img {
     width: 100%;
     height: fit-content; }
 
 /* Habilidades */
 #Habilidades {
-  height: 60vh;
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: repeat(4, 1fr);
@@ -508,13 +519,13 @@ header {
   grid-column: 1/2;
   justify-self: center;
   align-self: center; }
-  .selecHabilidades button {
+  .selecHabilidades a button {
     background-color: #100a2b;
     color: #ababab;
     padding: 5px 10px;
     border-radius: 5px;
     font-family: "Roboto"; }
-    .selecHabilidades button:hover {
+    .selecHabilidades a button:hover {
       filter: brightness(1.5); }
 
 .habilidadesImg {
@@ -647,16 +658,16 @@ td {
   .seleccionItem .tipoPersonaje h2 {
     font-size: 1.875rem; }
 
-.personajeCompras, .items img {
+.personajeCompras, .items a img {
   width: 50px;
   height: 40px; }
 
 .items {
   grid-column: 1/2;
   grid-row: 2/4; }
-  .items img {
+  .items a img {
     transition: 250ms; }
-    .items img:hover {
+    .items a img:hover {
       filter: brightness(1.5);
       transform: scale(1.3, 1.3); }
 
@@ -664,9 +675,9 @@ td {
   grid-column: 1/2;
   grid-row: 1/2;
   margin: .9375rem; }
-  .tipoPersonaje img {
+  .tipoPersonaje a img {
     transition: 250ms; }
-    .tipoPersonaje img:hover {
+    .tipoPersonaje a img:hover {
       filter: brightness(1.5);
       transform: scale(1.3, 1.3); }
   .tipoPersonaje h2 {
@@ -680,7 +691,7 @@ td {
   display: flex;
   justify-content: end;
   gap: .9375rem; }
-  .transaccion button {
+  .transaccion a button {
     height: 2.5rem;
     font-family: "lilita";
     font-size: 1.5625rem;
@@ -688,7 +699,7 @@ td {
     color: black;
     padding: 5px 10px;
     border-radius: 5px; }
-    .transaccion button:hover {
+    .transaccion a button:hover {
       filter: brightness(1.5); }
   .transaccion p {
     font-family: "lilita";
@@ -741,6 +752,29 @@ footer {
     color: #c4c3c3;
     font-size: 1rem; }
 
+.body404 {
+  background-image: none;
+  background-color: #fff4d7;
+  height: 100vh; }
+  .body404 main section div:nth-child(1) {
+    padding-left: 35%;
+    margin: 30px; }
+    .body404 main section div:nth-child(1) p {
+      margin: .3125rem;
+      color: #515151; }
+      .body404 main section div:nth-child(1) p span {
+        font-weight: bold;
+        color: #353535; }
+  .body404 main section div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    margin: 30px; }
+    .body404 main section div:nth-child(2) img {
+      width: 25rem;
+      height: 25rem; }
+      .body404 main section div:nth-child(2) img:hover {
+        filter: drop-shadow(0 0 2rem #c27f0b); }
+
 /* -------------------Media 990 (Boots)------------------*/
 @media only screen and (max-width: 990px) {
   .liBoots {
@@ -775,7 +809,13 @@ footer {
       height: fit-content; }
   /* Compras */
   .gridCompras .tipoPersonaje h2 {
-    font-size: 1.5625rem; } }
+    font-size: 1.5625rem; }
+  /* Personajes */
+  .selPersonajesContainer {
+    grid-template-rows: 50px 300px; }
+  /* Pagina 404 */
+  .body404 main section div:nth-child(1) {
+    padding-left: 25%; } }
 
 /* -------------------Media 850 ------------------*/
 @media only screen and (max-width: 850px) {
@@ -789,7 +829,7 @@ footer {
     flex-direction: column; }
   .sectionImg {
     margin: 0px; }
-  .descarga button {
+  .descarga a button {
     font-size: 1.25rem;
     padding: 10px 15px; }
   /* Compras */
@@ -919,7 +959,10 @@ footer {
       margin: 1.25rem; }
     footer div .contactoFooter {
       flex-direction: row;
-      justify-content: center; } }
+      justify-content: center; }
+  /* Pagina 404 */
+  .body404 main section div:nth-child(1) {
+    padding-left: 10%; } }
 
 /* -------------------Media 580 ------------------*/
 @media only screen and (max-width: 580px) {
@@ -982,7 +1025,21 @@ footer {
     padding-top: 3.125rem; }
     .personajeGrandeCompras img {
       width: 100%;
-      height: fit-content; } }
+      height: fit-content; }
+  /* Personajes */
+  #Habilidades {
+    height: 60vh; }
+  /* Pagina 404 */
+  .body404 main section div:nth-child(1) {
+    padding-left: 0%;
+    margin: 0px; }
+  .body404 main section div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    margin: 30px; }
+    .body404 main section div:nth-child(2) img {
+      width: 15.625rem;
+      height: 15.625rem; } }
 
 /* -------------------Media 420 ------------------*/
 @media only screen and (max-width: 420px) {
@@ -1084,7 +1141,7 @@ footer {
       font-size: 1.25rem; }
     .gridCompras .transaccion {
       flex-direction: column; }
-      .gridCompras .transaccion button {
+      .gridCompras .transaccion a button {
         font-size: 1.25rem; }
       .gridCompras .transaccion p {
         font-size: 1.25rem; }
